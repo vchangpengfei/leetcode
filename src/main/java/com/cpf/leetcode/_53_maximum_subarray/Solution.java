@@ -45,8 +45,8 @@ class Solution {
 
         int pre = 0, maxAns = nums[0];
         for (int x : nums) {
-            pre = Math.max(pre + x, x);
-            maxAns = Math.max(maxAns, pre);
+            pre = Math.max(pre + x, x);//存储当前的最大值
+            maxAns = Math.max(maxAns, pre);//当前的最大值跟 max比较 获取新的max
         }
         return maxAns;
 
